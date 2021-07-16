@@ -20,8 +20,8 @@ class BankAccount:
         self.balance = self.balance*self.int_rate
         return self
 
-s = BankAccount(0.02,0)
-m = BankAccount(0.01, 500)
+checking = BankAccount(0.02,0)
+savings = BankAccount(0.01, 500)
 
-m.deposit(200).deposit(200).withdraw(100).display_account_info()
-s.deposit(400).deposit(300).withdraw(800).display_account_info()
+savings.deposit(200).deposit(200).withdraw(100).display_account_info()
+checking.deposit(400).deposit(300).withdraw(800).display_account_info()
